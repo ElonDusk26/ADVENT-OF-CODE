@@ -1,9 +1,3 @@
-def divide_chunks(l, n): #ty geeksforgeeks
-     
-    # looping till length l
-    for i in range(0, len(l), n):
-        yield l[i:i + n]
-
 def getFileAsList(filename):
     rList = []
     with open(filename, "r") as fileObj:
@@ -42,16 +36,16 @@ for operation in operationList:
 spriteIndex = 1
 crtScreenList = []
 
-for crtRow in range(6):
+for crtRow in range(6): #6 is the amount of rows on the screen
     crtScreenRow = [""]*40
     for pixelIndex in range(40): #40 is the screen length
         spriteIndex = cycleRegisterList[(crtRow*40)+pixelIndex]
 
         written = False
         for pixelOffset in range(3):
-            try:
+            try: #ignores if the index is out of bounds
                 if crtScreenRow[spriteIndex - 1 + pixelOffset] == "" and spriteIndex - 1 + pixelOffset == pixelIndex: #pixel goes from 0, 1, 2
-                    crtScreenRow[spriteIndex - 1 + pixelOffset] = "#"
+                    crtScreenRow[pixelIndex] = "#"
                     written = True
                     break
             except:
