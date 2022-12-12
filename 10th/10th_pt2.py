@@ -44,7 +44,7 @@ for crtRow in range(6): #6 is the amount of rows on the screen
         written = False
         for pixelOffset in range(3):
             try: #ignores if the index is out of bounds
-                if crtScreenRow[spriteIndex - 1 + pixelOffset] == "" and spriteIndex - 1 + pixelOffset == pixelIndex: #pixel goes from 0, 1, 2
+                if spriteIndex - 1 + pixelOffset == pixelIndex: #pixel goes from 0, 1, 2
                     crtScreenRow[pixelIndex] = "#"
                     written = True
                     break
