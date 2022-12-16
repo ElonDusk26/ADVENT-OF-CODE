@@ -102,7 +102,7 @@ def floodGateSolve(legalMoves, visitedPoints, inputMaze: maze, depthCounter):
     return floodGateSolve(legalMovesToAdd, visitedPoints, inputMaze, depthCounter)
 
 
-mazeAsList = getFileAsList("11th/data")
+mazeAsList = getFileAsList("12th/data")
 importedMaze = maze(mazeAsList)
 
 aSets = []

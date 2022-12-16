@@ -66,7 +66,7 @@ def isValidToCMP(leftItem, rightItem):
     else:
         return 1
 
-rawData = getFileAsList("12th/data")
+rawData = getFileAsList("13th/data")
 
 #print(rawData[0].strip("][").split(","))
 

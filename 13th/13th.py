@@ -42,7 +42,7 @@ def isValid(leftElement, rightElement, validity):
             break
     return validity
 
-rawData = getFileAsList("12th/data")
+rawData = getFileAsList("13th/data")
 
 #print(rawData[0].strip("][").split(","))
 
