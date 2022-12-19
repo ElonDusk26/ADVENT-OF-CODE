@@ -134,7 +134,7 @@ def getCountOfUnavailableSpotsFromIntervals(row, intervals, coordinateDataList):
 
 
 
-rawBeaconData = getFileAsList("15th/testData")
+rawBeaconData = getFileAsList("15th/data")
 
 coordinateLenData = []
 for line in rawBeaconData:
@@ -158,8 +158,8 @@ for i, coordinateData in enumerate(coordinateLenData):
 
 print(checkUnavailableSpots(10, leftMostSensorIndex, rightMostSensorIndex, coordinateLenData))
 """
-listOfOverlappingIntervals = smartIntervalBasedCheckUnavailableSpots(10, coordinateLenData)
+listOfOverlappingIntervals = smartIntervalBasedCheckUnavailableSpots(2000000, coordinateLenData)
 
-print(getCountOfUnavailableSpotsFromIntervals(10, listOfOverlappingIntervals, coordinateLenData))
+print(getCountOfUnavailableSpotsFromIntervals(2000000, listOfOverlappingIntervals, coordinateLenData))
 
 print("end")
