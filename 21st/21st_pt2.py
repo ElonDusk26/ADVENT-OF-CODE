@@ -49,8 +49,7 @@ def calculateGradientAtVal(startMonkey, val, monkeyDict):
     return y1, slope
 
 def computeHumn(startMonkey, targetVal, monkeyDict):
-    original = monkeyDataDict["humn"]
-    humn = original
+    humn = monkeyDataDict["humn"]
     while True:
         out, gradient = calculateGradientAtVal(startMonkey,humn,monkeyDataDict)
         diff = hasToEqual - out
