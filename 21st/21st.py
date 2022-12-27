@@ -7,34 +7,6 @@ def getFileAsList(filename):
             rList.append(line.strip())
     return rList
 
-class Monkey:
-    def __init__(self, name, jobString):
-        self.name = name
-        if isinstance(jobString, int):
-            self.isJobANumber = True
-            self.number = jobString
-        else:
-            self.isJobANumber = False
-            self.jobOperatorLambda, self.targetApes = self.interpretJob(jobString)
-            
-
-    def interpretJob(self, jobString): #only run if the job isnt a number
-        splitJob = jobString.split(" ")
-        jobLambda = None
-        if splitJob[1] == "+":
-            jobLambda = lambda x, y: (x+y)
-        elif splitJob[1] == "-":
-            jobLambda = lambda x, y: (x-y)
-        elif splitJob[1] == "*":
-            jobLambda = lambda x, y: (x*y)
-        else:
-            jobLambda = lambda x, y: (x/y)
-        return jobLambda, [splitJob[0], splitJob[2]]
-
-    def indexMonkeys(self, monkeyList):
-        if not self.isJobANumber:
-            pass
-
 def evaluateMonkey(targetMonkey, monkeyDict):
     targetMonkeyVal = monkeyDict[targetMonkey]
     if isinstance(targetMonkeyVal, int):
