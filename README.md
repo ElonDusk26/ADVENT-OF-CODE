@@ -1,8 +1,9 @@
 # ADVENT-OF-CODE
 
-My attempt at completing the challenges. My solutions are by no means perfect, but they work and i can definitely tidy them up.
+My attempt at completing the AOC challenges.
 
 Everything is written by me (and chatgpt for the first day as a test), and i have not looked up any hints. All of these solutions are mine. 
 
+Each folder is a solution to the given day. 
 
-The only working solutions are the files named either day.py (like 5th.py) or day_pt2.py (like 20th_pt2.py).
+Within each folders there are 2 solutions. The first solution has a filename equal to the folder and ends with the file extension ".py", and the second solution has the suffix "_pt2.py".
